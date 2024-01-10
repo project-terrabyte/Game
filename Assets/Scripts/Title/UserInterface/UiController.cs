@@ -6,13 +6,15 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class UiController : MonoBehaviour {
+namespace Title.UserInterface {
+    public class UiController : MonoBehaviour {
 
-    private void Update() {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("Clicked!!");
-            SceneManager.LoadScene("Lobby");
+        private void Update() {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Debug.Log("Clicked!!");
+                SceneManager.LoadScene("Lobby");
+            }
         }
     }
 }

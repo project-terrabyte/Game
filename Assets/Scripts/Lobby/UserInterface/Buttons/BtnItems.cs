@@ -5,14 +5,15 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class BtnItems : MonoBehaviour {
+namespace Lobby.UserInterface.Buttons {
+    public class BtnItems : MonoBehaviour {
 
-    [SerializeField] private AudioClip audioClip;
-    [SerializeField] private AudioSource audioSource;
+        [SerializeField] private AudioClip audioClip;
+        [SerializeField] private AudioSource audioSource;
 
-    public void OnClick() {
-        audioSource.clip = audioClip;
-        audioSource.Play();
+        public void OnClick() {
+            audioSource.clip = audioClip;
+            audioSource.Play();
+        }
     }
-
 }
